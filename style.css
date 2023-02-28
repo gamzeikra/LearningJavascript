@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Inter:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel.active{
+    flex:5;
+}
+
+.panel h3{
+    font-size:20px;
+    position: absolute;
+    top:50px;
+    left:45%;
+    margin: 0px;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    color: grey;
+    background-color: whitesmoke;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel p{
+    font-size:16px;
+    position: absolute;
+    bottom: 20px;
+    left:10%;
+    right:10%;
+    margin: 0px;
+    padding: 5px;
+    border-radius: 20px;
+    opacity: 0;
+    color: grey;
+    background-color: whitesmoke;
+}
+
+.panel.active p{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
