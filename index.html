@@ -1,42 +1,23 @@
 <!DOCTYPE html>
 <html lang="tr">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="panel" style="background-image:url('https://i.hizliresim.com/13rkmbl.jpg')">
-            <h3>NEVŞEHİR</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
+    <head>
+        <title> Progress Steps</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="progress-container">
+                <div class="progress" id="progress"></div> 
+                  <div class="circle active">1</div>  
+                  <div class="circle">2</div>    
+                  <div class="circle">3</div>   
+                  <div class="circle">4</div>
         </div>
-
-        <div class="panel" style="background-image:url('https://i.hizliresim.com/4h487r9.jpg')">
-            <h3>ANKARA</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-        </div>
-
-        <div class="panel active" style="background-image:url('https://i.hizliresim.com/zjkr8wq.jpg')">
-            <h3>İSTANBUL</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-        </div>
-        <div class="panel " style="background-image:url('https://i.hizliresim.com/sx9minu.jpg')">
-            <h3>MUĞLA</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-        </div>
-        <div class="panel" style="background-image:url('https://i.hizliresim.com/7jw1asv.jpg')">
-            <h3>SAKARYA</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-        </div>
+        <button class="btn" id="prev" disabled>Önceki</button>
+        <button class="btn" id="next">Sonraki</button>
     </div>
-    <script src="script.js"> </script>
-</body>
+       <script src="script.js"></script>
+    </body>
 
 </html>
